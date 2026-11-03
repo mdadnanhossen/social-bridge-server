@@ -8,7 +8,6 @@ import { createRemoteJWKSet, jwtVerify } from "jose";
 const app = express();
 const port = process.env.PORT || 5000;
 
-// ===============================
 // Middleware
 // ===============================
 
