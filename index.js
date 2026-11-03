@@ -33,7 +33,7 @@ const eventCollection = db.collection("events");
 
 
 // Better Auth JWT Verification
-// ===============================
+
 
 const AUTH_BASE_URL =
   // process.env.BETTER_AUTH_URL || "http://localhost:3000";
@@ -82,7 +82,7 @@ const verifyToken = async (req, res, next) => {
   }
 };
 
-// ===============================
+
 // Test API
 // ===============================
 
