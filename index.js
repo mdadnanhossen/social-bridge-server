@@ -84,7 +84,7 @@ const verifyToken = async (req, res, next) => {
 
 
 // Test API
-// ===============================
+
 
 app.get("/", (req, res) => {
   res.send({
@@ -93,9 +93,9 @@ app.get("/", (req, res) => {
   });
 });
 
-// ===============================
+
 // Create Event API
-// ===============================
+
 
 app.post("/create-event", verifyToken, async (req, res) => {
   try {
