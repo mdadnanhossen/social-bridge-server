@@ -16,7 +16,7 @@ app.use(express.json());
 
 
 // MongoDB Connection
-// ===============================
+
 
 if (!process.env.MONGO_URI) {
   throw new Error("MONGO_URI is missing from .env file");
@@ -31,7 +31,7 @@ console.log("Successfully connected to MongoDB!");
 const db = client.db("Social-Bridge");
 const eventCollection = db.collection("events");
 
-// ===============================
+
 // Better Auth JWT Verification
 // ===============================
 
