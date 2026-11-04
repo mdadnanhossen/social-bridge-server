@@ -125,9 +125,7 @@ app.post("/create-event", verifyToken, async (req, res) => {
   }
 });
 
-// ===============================
-// Get All Events API
-// ===============================
+
 
 
 // ===============================
@@ -319,3 +317,5 @@ app.delete("/events/:id", verifyToken, async (req, res) => {
 app.listen(port, () => {
   console.log(`Social Bridge Server running on port ${port}`);
 });
+
+export default app;
