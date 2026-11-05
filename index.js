@@ -148,11 +148,13 @@ app.get("/create-event", async (req, res) => {
 });
 
 
-// ===============================
-// Get Single Event API
+
+// Get Single Event API (Public)
 // ===============================
 
-app.get("/upcoming-event/:id", verifyToken, async (req, res) => {
+// No verifyToken: the event details page is public — anyone may read an
+// event, while joining it still requires a signed-in user on the client.
+app.get("/upcoming-event/:id", async (req, res) => {
   try {
     const { id } = req.params;
 

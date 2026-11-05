@@ -96,7 +96,7 @@ http://localhost:5000
 | GET | `/` | Check server status | Public |
 | POST | `/create-event` | Create a new event | Required |
 | GET | `/create-event` | Get all events | Public |
-| GET | `/upcoming-event/:id` | Get a single event | Required |
+| GET | `/upcoming-event/:id` | Get a single event | Public |
 | PUT | `/events/:id` | Update an event | Required |
 | DELETE | `/events/:id` | Delete an event | Required |
 
